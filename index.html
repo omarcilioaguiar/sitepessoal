@@ -399,6 +399,34 @@
               <span>DevOps</span>
             </div>
           </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <i class="fas fa-robot"></i>
+              <div class="project-links">
+                <a
+                  id="project-5-code-link"
+                  href="https://github.com/omarcilioaguiar/feirai"
+                  target="_blank"
+                  aria-label="Ver código"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3 id="project-5-title">FeirAI</h3>
+            <p id="project-5-desc">
+              Problema: inflação nos itens de mercado. Solução: assistente
+              financeiro com algoritmos para prever tendências de preços e
+              otimizar rotas de compra entre supermercados. Resultado: economia
+              real de até 20% nas compras mensais.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>React</span>
+              <span>SQLite</span>
+              <span>Google Maps API</span>
+            </div>
+          </div>
         </div>
         <div class="projects-footer">
           <a
@@ -744,6 +772,9 @@
           project4Title: "Terraform AWS Deploy",
           project4Desc:
             "Problema: infraestrutura criada manualmente e com risco de inconsistência. Solução: provisionamento em AWS com Terraform e pipelines CI/CD. Resultado: deploy mais rápido, reproduzível e seguro.",
+          project5Title: "FeirAI",
+          project5Desc:
+            "Problema: inflação nos itens de mercado. Solução: assistente financeiro com algoritmos para prever tendências de preços e otimizar rotas de compra entre supermercados. Resultado: economia real de até 20% nas compras mensais.",
           projectsSeeAll: '<i class="fab fa-github"></i> Ver todos no GitHub',
           contactTitle: "Entre em <span>Contato</span>",
           contactSubtitle:
@@ -891,6 +922,9 @@
           project4Title: "Terraform AWS Deploy",
           project4Desc:
             "Problem: manually created infrastructure with inconsistency risk. Solution: AWS provisioning with Terraform and CI/CD pipelines. Result: faster, repeatable, and safer deployments.",
+          project5Title: "FeirAI",
+          project5Desc:
+            "Problem: rising grocery prices driving up monthly expenses. Solution: an AI financial assistant using algorithms to predict price trends and optimize shopping routes across supermarkets. Result: real savings of up to 20% on monthly grocery bills.",
           projectsSeeAll: '<i class="fab fa-github"></i> See all on GitHub',
           contactTitle: "Get in <span>Touch</span>",
           contactSubtitle:
@@ -1037,6 +1071,9 @@
           project4Title: "Terraform AWS Deploy",
           project4Desc:
             "Problema: infraestructura creada manualmente y propensa a inconsistencias. Solución: aprovisionamiento en AWS con Terraform y pipelines CI/CD. Resultado: despliegues más rápidos, repetibles y seguros.",
+          project5Title: "FeirAI",
+          project5Desc:
+            "Problema: inflación en los precios del supermercado. Solución: asistente financiero con IA que predice tendencias de precios y optimiza rutas de compra entre supermercados. Resultado: ahorro real de hasta 20% en las compras mensuales.",
           projectsSeeAll: '<i class="fab fa-github"></i> Ver todo en GitHub',
           contactTitle: "Ponte en <span>Contacto</span>",
           contactSubtitle:
@@ -1172,6 +1209,9 @@
         document
           .getElementById("project-4-code-link")
           .setAttribute("aria-label", t.projectCodeAria);
+        document
+          .getElementById("project-5-code-link")
+          .setAttribute("aria-label", t.projectCodeAria);
         setText("hero-greeting", t.heroGreeting);
         setText("hero-name", t.heroName);
         setText("hero-role", t.heroRole);
@@ -1198,6 +1238,8 @@
         setText("project-3-desc", t.project3Desc);
         setText("project-4-title", t.project4Title);
         setText("project-4-desc", t.project4Desc);
+        setText("project-5-title", t.project5Title);
+        setText("project-5-desc", t.project5Desc);
         setHtml("projects-see-all", t.projectsSeeAll);
 
         setHtml("contact-title", t.contactTitle);
